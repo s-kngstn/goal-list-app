@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Daily Goal List</title>
+    <title>QUICK LISTS | In-browser list maker </title>
   </head>
   <body>
     <div class="container">
@@ -22,40 +22,48 @@
         <!-- GOAT INPUT SECTION -->
         <div class="main">
           <div class="title-box">
-            <span class="title">Today's Goals</span>
+            <span
+              class="title"
+            >quick</span>
           </div>
+          <div class="title-box">
+            <span
+              class="title"
+            >Lists</span>
+          </div>
+         
           <div class="row">
             <form id="goal-form">
               <input
                 class="goal-input"
-                placeholder="New Goal"
+                placeholder="New Item"
                 type="text"
                 name="goal"
                 id="goal"
               />
-              <label class="goal-label" for="goal">New Goal</label>
-              <input type="submit" value="Add Goal" class="btn" />
+              <label class="goal-label" for="goal">New Item</label>
+              <input type="submit" value="Add" class="btn input" />
             </form>
           </div>
 
         <!-- GOAL LIST SECTION -->
         
           <div class="title-box">
-            <span class="title">Goals</span>
+            <span class="title">My List</span>
           </div>
           <div class="row">
             <form id="goal-form" class="input-field">
               <input
                 class="goal-input"
-                placeholder="Filter Goals"
+                placeholder="Search"
                 type="text"
                 name="filter"
                 id="filter"
               />
-              <label class="goal-label" for="filter">Filter Goals</label>
+              <label class="goal-label" for="filter">Search</label>
             
             <ul class="collection"></ul>
-            <a href="#" class="clear-tasks btn">Clear All</a>
+            <a href="#" class="clear-tasks btn">Clear</a>
           </form>
           </div>
         </div>

@@ -102,7 +102,7 @@ function storeGoalInLocalStorage(goal) {
 // REMOVE GOAL
 function removeGoal(e) {
   if (e.target.parentElement.classList.contains('delete-item')) {
-    if (confirm('Did you complete this goal?')) {
+    if (confirm('Are you sure you want to remove this item?')) {
       e.target.parentElement.parentElement.remove();
 
       // REMOVE FROM LOCAL STORAGE

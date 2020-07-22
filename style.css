@@ -8,26 +8,29 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  background-color: #3b3b3b;
 }
 
 .container {
-  height: 100vh;
-  background-color: blue;
+  background-color: #3b3b3b;
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 3rem;
 }
 
 .row {
   max-width: 1280px;
   width: 100%;
-  background-color: teal;
-  padding: 1rem;
+  background-color: #f5f5f5;
+
+  border-radius: 4px;
+  padding-bottom: 2rem;
 }
 
-.main {
-  /* padding: 1rem; */
-  background-color: tomato;
+.row:first-child {
+  padding-top: 3rem;
 }
 
 .title-box {
@@ -37,12 +40,15 @@ html {
 }
 
 .title {
-  background-color: #333;
-  color: #fff;
-  font-size: 3rem;
+  background-color: #f5f5f5;
+  color: #c04b4b;
+  font-size: 4rem;
   text-transform: uppercase;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
+  font-weight: 200;
+}
+
+span {
+  display: block;
 }
 
 /* FORM STYLING */
@@ -54,11 +60,17 @@ html {
   align-items: center;
 }
 
+#goal-form:first-child {
+  margin-bottom: 2rem;
+}
+
 .goal-label {
   font-size: 1.2rem;
   display: block;
   transition: all 0.3s;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
 }
 
 .goal-input {
@@ -66,18 +78,20 @@ html {
   font-family: inherit;
   padding: 0.5rem 1rem;
   border-radius: 2px;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(218, 216, 216);
   color: inherit;
+  font-weight: 200;
+
   border: none;
   width: 75%;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid black;
   display: block;
+  margin-top: 2rem;
 }
 
 .goal-input:focus {
   outline: none;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #c04b4b;
 }
 
 .goal-input:placeholder-shown + .goal-label {
@@ -109,8 +123,8 @@ html {
 .btn,
 .btn:link,
 .btn:visited {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.15);
+  color: #3b3b3b;
+  background-color: rgba(112, 108, 108, 0.658);
   border: none;
   border-radius: 2px;
   width: 75%;
@@ -120,22 +134,29 @@ html {
   backdrop-filter: blur(5px);
   text-transform: uppercase;
   font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 .btn:hover {
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(112, 108, 108, 0.658);
   backdrop-filter: blur(5px);
-  font-size: 1.3rem;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.123);
 }
 
 .btn:active,
 .btn:focus {
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(112, 108, 108, 0.658);
   backdrop-filter: blur(5px);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.103);
 }
 
 a {
@@ -144,4 +165,37 @@ a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+/* LIST STYLE */
+
+.collection li {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(233, 231, 231);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.collection li a {
+  float: right;
+  font-size: 1rem;
+  color: #c04b4b;
+  transition: transform 0.3s;
+}
+
+.collection li a:hover {
+  float: right;
+  color: #c04b4b;
+  transform: rotate(125deg);
 }
