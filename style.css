@@ -173,11 +173,9 @@ a {
 
 .collection li {
   list-style: none;
-  display: inline-block;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
   margin: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgb(233, 231, 231);
@@ -189,15 +187,16 @@ a {
   padding: 1rem;
 }
 
-.collection li a {
+.collection a {
+  display: block;
   float: right;
   font-size: 1rem;
   color: #fd5252;
   transition: transform 0.3s;
+  margin-left: 15rem;
 }
 
-.collection li a:hover {
-  float: right;
+.collection a:hover {
   color: #fd5252;
   transform: rotate(125deg);
 }
