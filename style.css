@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: blue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  max-width: 1280px;
+  width: 100%;
+  background-color: teal;
+  padding: 1rem;
+}
+
+.main {
+  /* padding: 1rem; */
+  background-color: tomato;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background-color: #333;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+/* FORM STYLING */
+
+#goal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goal-label {
+  font-size: 1.2rem;
+  display: block;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+.goal-input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  background-color: rgb(224, 224, 224);
+  color: inherit;
+  border: none;
+  width: 75%;
+  border-bottom: 3px solid transparent;
+  display: block;
+}
+
+.goal-input:focus {
+  outline: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid black;
+}
+
+.goal-input:placeholder-shown + .goal-label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+/* BUTTON STYLING */
+
+.btn,
+.btn:link,
+.btn:visited {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 2px;
+  width: 75%;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  backdrop-filter: blur(5px);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  font-size: 1.3rem;
+}
+
+.btn:active,
+.btn:focus {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
