@@ -13,10 +13,21 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="#" />
     <title>QUICK LISTS | In-browser list maker </title>
   </head>
   <body>
+    
+      <div id="theme-wrapper">
+        <div data-mode="light" class="theme-square" id="light-mode"></div>
+        <div data-mode="dark" class="theme-square" id="dark-mode"></div>
+        <div data-mode="color-1" class="theme-square" id="color-1-mode"></div>
+        <div data-mode="color-2" class="theme-square" id="color-2-mode"></div>
+        <div data-mode="color-3" class="theme-square" id="color-3-mode"></div>
+      </div>
+    
     <div class="container">
       <div class="row">
         <!-- GOAT INPUT SECTION -->
@@ -36,7 +47,7 @@
             <form id="goal-form">
               <input
                 class="goal-input"
-                placeholder="New Item"
+                placeholder="Insert a new item or task here"
                 type="text"
                 name="goal"
                 id="goal"
@@ -46,25 +57,26 @@
             </form>
           </div>
 
+          <hr>
         <!-- GOAL LIST SECTION -->
         
           <div class="title-box">
-            <span class="title">My List</span>
+            <span class="title title-two">My List</span>
           </div>
           <div class="row">
             <form id="goal-form" class="input-field">
               <input
                 class="goal-input"
-                placeholder="Search"
+                placeholder="Search through your items & tasks"
                 type="text"
                 name="filter"
                 id="filter"
               />
-              <label class="goal-label" for="filter">Search</label>
+              <label class="goal-label" for="filter">Searching....</label>
             
-            <ul class="collection"></ul>
-            <a href="#" class="clear-tasks btn">Clear</a>
-          </form>
+              <ul class="collection"></ul>
+              <a href="#" class="clear-tasks btn">Clear</a>
+            </form>
           </div>
         </div>
     </div>

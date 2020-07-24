@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #bfa4b2;
+  --secondaryColor: #bfa4b2;
+  --textColor: #222;
+  --boxColor: #f5f5f5;
+
+  --border-color: #bfa4b2;
+  --border-focus-color: #222;
+
+  --themeBorder: black;
+}

@@ -1,0 +1,12 @@
+:root {
+  --mainColor: #333;
+  --secondaryColor: rgb(233, 229, 182);
+  --textColor: rgb(233, 229, 182);
+
+  --boxColor: #2c2c2c;
+
+  --border-color: rgb(233, 229, 182);
+  --border-focus-color: rgb(236, 227, 118);
+
+  --themeBorder: rgb(233, 229, 182);
+}

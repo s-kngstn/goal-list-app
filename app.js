@@ -157,3 +157,48 @@ function filterGoals(e) {
     }
   });
 }
+
+// ========== CHANGE & STORE THEMES ========= //
+
+// STORE THEME IN LOCAL STORAGE
+const theme = localStorage.getItem('theme');
+
+if (theme == null) {
+  setTheme('light');
+} else {
+  setTheme(theme);
+}
+
+// CREATE SELECTOR FOR THEME SQUARES
+const themeSquares = document.querySelectorAll('.theme-square');
+
+// SET EVENT LISTENER FOR EACH COLOR
+for (var i = 0; themeSquares.length > i; i++) {
+  themeSquares[i].addEventListener('click', function () {
+    let mode = this.dataset.mode;
+    // console.log('clicked');
+    setTheme(mode);
+  });
+}
+
+// CHANGE COLOR BASED ON CSS FILE
+
+function setTheme(mode) {
+  if (mode === 'light') {
+    document.querySelector('#theme-style').href = 'default.css';
+  }
+  if (mode === 'dark') {
+    document.querySelector('#theme-style').href = 'dark.css';
+  }
+  if (mode === 'color-1') {
+    document.querySelector('#theme-style').href = 'color-1.css';
+  }
+  if (mode === 'color-2') {
+    document.querySelector('#theme-style').href = 'color-2.css';
+  }
+  if (mode === 'color-3') {
+    document.querySelector('#theme-style').href = 'color-3.css';
+  }
+
+  localStorage.setItem('theme', mode);
+}
