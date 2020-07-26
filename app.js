@@ -131,12 +131,13 @@ function removeGoalFromLocalStorage(goalItem) {
 
 // CLEAR GOALS
 function clearGoals() {
-  alert('Are you sure you want to delete ALL your items??');
-  while (taskList.firstChild) {
-    taskList.removeChild(taskList.firstChild);
-  }
+  if (confirm('Are you sure you want to delete ALL your items??')) {
+    while (taskList.firstChild) {
+      taskList.removeChild(taskList.firstChild);
+    }
 
-  clearGoalsFromLocalStorage();
+    clearGoalsFromLocalStorage();
+  }
 }
 
 // CLEAR GOALS FROM LOCAL STORAGE
