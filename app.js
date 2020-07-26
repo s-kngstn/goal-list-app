@@ -131,6 +131,7 @@ function removeGoalFromLocalStorage(goalItem) {
 
 // CLEAR GOALS
 function clearGoals() {
+  alert('Are you sure you want to delete ALL your items??');
   while (taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
