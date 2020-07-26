@@ -54,7 +54,7 @@ function getGoals() {
 // ADD A TASK
 function addTask(e) {
   if (taskInput.value === '') {
-    alert('Please add a goal');
+    alert('Please add a item or task');
     return;
   }
 
@@ -200,5 +200,6 @@ function setTheme(mode) {
     document.querySelector('#theme-style').href = 'color-3.css';
   }
 
+  // STORE(SAVE) THEME TO LOCAL STORAGE
   localStorage.setItem('theme', mode);
 }

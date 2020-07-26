@@ -166,6 +166,7 @@ span {
   transition: all 0.2s;
   margin-top: 1rem;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -193,6 +194,7 @@ a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  -webkit-appearance: none;
 }
 
 /* LIST STYLE */
