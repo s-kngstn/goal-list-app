@@ -149,7 +149,25 @@ function clearGoalsFromLocalStorage() {
 
 // FILTER THROUGH GOALS
 function filterGoals(e) {
-  const text = e.target.value.toLowerCase();
+  let text = e.target.value.toLowerCase();
+  let collectionItems = document.querySelectorAll('.collection-item');
+  let matchFound = false;
+
+  for (let i = 0; i < collectionItems.length; i += 1) {
+    let goal = collectionItems[i];
+    let item = goal.firstChild.textContent;
+
+    if (item.toLowerCase().indexOf(text) !== -1) {
+      matchFound = true;
+      break;
+    }
+  }
+
+  if (matchFound) {
+    goalFilter.textContent = 'Search results';
+  } else {
+    goalFilter.textContent = 'This item is not in your list';
+  }
 
   document.querySelectorAll('.collection-item').forEach(function (goal) {
     const item = goal.firstChild.textContent;
