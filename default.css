@@ -208,7 +208,7 @@ a {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border-color);
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   overflow: hidden;
   font-size: 1.5rem;
   font-weight: 300;

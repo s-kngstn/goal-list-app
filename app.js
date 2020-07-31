@@ -4,6 +4,7 @@ const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#goal');
+const goalFilter = document.querySelector('#goal-filter');
 
 // LOAD EVENT LISTENERS
 loadEventListeners();
@@ -131,7 +132,7 @@ function removeGoalFromLocalStorage(goalItem) {
 
 // CLEAR GOALS
 function clearGoals() {
-  if (confirm('Are you sure you want to delete ALL your items??')) {
+  if (confirm('Are you sure you want to delete all your items?')) {
     while (taskList.firstChild) {
       taskList.removeChild(taskList.firstChild);
     }
